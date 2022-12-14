@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Enjoy the Outdoors</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+      <!-- Custom CSS-->
+      <link rel="stylesheet" href="css/style.css">
+
+      <!-- Font awesome icons -->
+      <script src="https://kit.fontawesome.com/a3673542d4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="mountainBackground">
+  <header>
+    <!-- place navbar here -->
+    <div class="header">
+        <div class="container">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+                      <li><a href="#">Careers</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        <div>
+  </header>
+  <main>
+    <div class="container">
+      <!--"onchange= When someone selects something from dropdown"-->
+        <select id="mountainsList" onchange="displayMountains()"></select>
+
+        <div id="app"></div>
+        <div id="locations"></div>
+        <div id="mountains"></div>
+
+
+        <div id=""></div>
+        <select id="mountain">
+
+        </select>
+
+  
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+    <div class="myfooter">
+        <div class="myfooter">
+          <a class="mynav" href="https://www.youtube.com/?themeRefresh=1" aria-current="page"><i class="fa-brands fa-youtube"></i>YouTube</a>
+          <a class="mynav" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+          <a class="mynav" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i>Twitter</a>
+      </div>
+  
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+   <!-- Custom JavaScript-->
+   <script src="scripts/nationalParkData.js"></script>
+   <script src="scripts/locationData.js"></script>
+   <script src="scripts/mountainData.js"></script>
+   <script src="scripts/parkTypeData.js"></script>
+   <script src="scripts/mountainList.js"></script>
+   <script src="scripts/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Enjoy the Outdoors</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+     <!-- Custom CSS-->
+     <link rel="stylesheet" href="css/style.css">
+
+     <!-- Font awesome icons -->
+     <script src="https://kit.fontawesome.com/a3673542d4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="nationalBackground">
+
+  <header>
+    <!-- place navbar here -->
+    <div class="header">
+      <div class="container">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+					<li><a href="#">Careers</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      <div>
+  </header>
+  <main>
+    <div class="container">
+      <select id="statesList" onchange="displayParks()"></select>
+      <button onclick="locationDropDown()">Search State</button>
+      <select id="parksType"></select>
+      <button onclick="parksDropDown()">Search Park</button>
+
+<script>
+  const characters = [
+  {
+    LocationID: "ABLI",
+    LocationName: "Abraham Lincoln Birthplace National Historical Park",
+    Address: "2995 Lincoln Farm Road",
+    City: "Hodgenville",
+    State: "Kentucky",
+    ZipCode: 42748,
+    Phone: "(270) 358-3137",
+    Fax: "(270) 358-3874",
+    Latitude: 37.535671,
+    Longitude: -85.7340637,
+    Location: {
+        coordinates: [
+        -85.7340637,
+        37.535671
+        ],
+        type: "Point"
+    }
+    },
+    {
+    LocationID: "ACAD",
+    LocationName: "Acadia National Park",
+    Address: "P.O. Box 177",
+    City: "Bar Harbor",
+    State: "Maine",
+    ZipCode: 4609,
+    Phone: "(207) 288-3338",
+    Fax: "(207) 288-8813",
+    Visit: "https://www.nps.gov/acad/index.htm",
+    Latitude: 44.3385559,
+    Longitude: -68.2733346,
+    Location: {
+        coordinates: [
+        -68.2733346,
+        44.3385559
+        ],
+        type: "Point"
+    }
+  }
+
+
+
+</script>
+
+      <!--NEW FILTERING SEARCH FOR PARKS-->
+    
+      <div class="container-filter"></div>
+        <h1>Filter Search</h1>
+        <input onkeyup= "filter()" id="search" type="text" placeholder="Search.....">
+        <ul id="menu">
+          <li><a href="#">State</a></li>
+          <li><a href="#">National Park</a></li>
+          <li><a href="#">City</a></li>
+          <li><a href="#">Location ID</a></li>
+    
+    
+        </ul>
+      </div>
+ 
+
+  </main>
+
+
+  <footer>
+    <!-- place footer here -->
+    <div class="myfooter">
+      <div class="myfooter">
+        <a class="mynav" href="youtube.com" aria-current="page"><i class="fa-brands fa-youtube"></i>YouTube</a>
+        <a class="mynav" href="facebook.com"><i class="fa-brands fa-facebook"></i>Facebook</a>
+        <a class="mynav" href="twitter.com"><i class="fa-brands fa-twitter"></i>Twitter</a>
+    </div>
+
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+   <!-- Custom JavaScript-->
+   <script src="scripts/nationalParkData.js"></script>
+   <script src="scripts/locationData.js"></script>
+   <script src="scripts/mountainData.js"></script>
+   <script src="scripts/parkTypeData.js"></script>
+   <script src="scripts/parkspage.js"></script>
+</body>
+
+</html>

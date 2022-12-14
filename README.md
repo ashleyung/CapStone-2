@@ -1,2 +1,1 @@
-# CapStone-2
- EnjoytheOutdoors
+# CAPSTONE-2-Enjoy-The-Outdoors
